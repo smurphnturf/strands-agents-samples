@@ -1,3 +1,22 @@
+# Just Experimenting Repo
+ 
+Just for testing out various parts of the strands agents SDK, tools, frameworks, etc
+
+# Tracks Strands Agents Samples
+
+https://github.com/strands-agents/samples
+
+## Get Started 
+
+cd samples/01-getting-started/01-connecting-with-aws-services
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+touch agent.py
+
+npm config set registry https://registry.npmjs.org/
+
+
 <div align="center">
   <div>
     <a href="https://strandsagents.com">
