@@ -6,5 +6,9 @@ python prereqs/knowledge_base.py --mode delete
 echo "Removing DynamoDB resources..."
 python prereqs/dynamodb.py --mode delete
 
+# clean up guardrail
+echo "Removing Bedrock Guardrail resources..."
+python prereqs/guardrail.py --mode delete
+
 
 

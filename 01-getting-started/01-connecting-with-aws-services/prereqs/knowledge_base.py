@@ -31,6 +31,7 @@ valid_embedding_models = [
     "cohere.embed-english-v3",
     "amazon.titan-embed-text-v1",
     "amazon.titan-embed-text-v2:0",
+    "amazon.titan-text-lite-v1", # added extra here aus models are limited
 ]
 pp = pprint.PrettyPrinter(indent=2)
 

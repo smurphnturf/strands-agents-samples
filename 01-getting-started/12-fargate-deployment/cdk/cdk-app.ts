@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { App, Aspects } from "aws-cdk-lib";
 import { StrandsFargateStack } from "./stacks/strands-fargate-stack";
-import { AwsSolutionsChecks, NagSuppressions } from 'cdk-nag';
+import { AwsSolutionsChecks, NagSuppressions } from "cdk-nag";
 import { projectName } from "./constant";
 
 const app = new App();
@@ -18,10 +18,9 @@ const fargateStack = new StrandsFargateStack(app, `${projectName}FargateStack`, 
 
   /* Uncomment the next line if you know exactly what Account and Region you
    * want to deploy the stack to. */
-  // env: { account: '123456789012', region: 'us-east-1' },
+  env: { account: '293952095306', region: 'ap-southeast-2' },
 
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
-
 
 Aspects.of(app).add(new AwsSolutionsChecks({ verbose: true }));

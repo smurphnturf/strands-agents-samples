@@ -7,7 +7,7 @@ import * as logs from "aws-cdk-lib/aws-logs";
 import * as elbv2 from "aws-cdk-lib/aws-elasticloadbalancingv2";
 import * as ecrAssets from "aws-cdk-lib/aws-ecr-assets";
 import * as path from "path";
-import { agentModelId, projectName, s3BucketProps, ssmParamDynamoDb, ssmParamKnowledgeBaseId } from "../constant";
+import { agentModelId, projectName, s3BucketProps, ssmParamDynamoDb, ssmParamKnowledgeBaseId, ssmParamGuardrailId, ssmParamGuardrailVersion } from "../constant";
 import { BlockPublicAccess, Bucket, BucketEncryption, ObjectOwnership } from "aws-cdk-lib/aws-s3";
 import { setSecureTransport } from "../utility";
 import * as ssm from "aws-cdk-lib/aws-ssm";
@@ -28,6 +28,26 @@ export class StrandsFargateStack extends Stack {
       `${projectName}-dynamo-db-name`,
       `/${ssmParamDynamoDb}`,
     );
+
+    // Try to get guardrail parameters (optional - may not exist)
+    let guardrailId: ssm.IStringParameter | undefined;
+    let guardrailVersion: ssm.IStringParameter | undefined;
+    
+    try {
+      guardrailId = ssm.StringParameter.fromStringParameterName(
+        this,
+        `${projectName}-guardrail-id`,
+        `/${ssmParamGuardrailId}`,
+      );
+      
+      guardrailVersion = ssm.StringParameter.fromStringParameterName(
+        this,
+        `${projectName}-guardrail-version`,
+        `/${ssmParamGuardrailVersion}`,
+      );
+    } catch (error) {
+      console.log("Guardrail parameters not found - deploying without guardrails");
+    }
 
     // const albLogBucket = new Bucket(this, `${projectName}-alb-access-logs`, {
     //   objectOwnership: ObjectOwnership.OBJECT_WRITER,
@@ -77,10 +97,14 @@ export class StrandsFargateStack extends Stack {
 
     setSecureTransport(agentBucket);
 
-    // Define the VPC
-    const vpc = new ec2.Vpc(this, `${projectName}-vpc`, {
-      maxAzs: 2,
-      natGateways: 1,
+    // // Define the VPC
+    // const vpc = new ec2.Vpc(this, `${projectName}-vpc`, {
+    //   maxAzs: 2,
+    //   natGateways: 1,
+    // });
+    // Import the VPC by ID (replace 'vpc-xxxxxxxx' with your VPC ID)
+    const vpc = ec2.Vpc.fromLookup(this, `vpc-shared`, {
+      vpcId: "vpc-057ac7d36bc099bf1", // team
     });
 
     // Create the VPC Flow Log without deliverLogsPermissionArn
@@ -117,14 +141,11 @@ export class StrandsFargateStack extends Stack {
 
     agentBucket.grantReadWrite(taskRole);
 
-
     // Add permissions for the task to invoke Bedrock APIs
     taskRole.addToPolicy(
       new iam.PolicyStatement({
         actions: ["bedrock:InvokeModel", "bedrock:InvokeModelWithResponseStream"],
-        resources: [
-          "*"
-        ],
+        resources: ["*"],
       }),
     );
 
@@ -164,6 +185,18 @@ export class StrandsFargateStack extends Stack {
       }),
     );
 
+    // Add guardrail permissions if guardrail is configured
+    if (guardrailId) {
+      taskRole.addToPolicy(
+        new iam.PolicyStatement({
+          actions: ["bedrock:ApplyGuardrail"],
+          resources: [
+            `arn:aws:bedrock:${process.env.CDK_DEFAULT_REGION}:${process.env.CDK_DEFAULT_ACCOUNT}:guardrail/${guardrailId.stringValue}`,
+          ],
+        }),
+      );
+    }
+
     // Create a task definition
     const taskDefinition = new ecs.FargateTaskDefinition(this, `${projectName}-task-definition`, {
       memoryLimitMiB: 512,
@@ -194,7 +227,11 @@ export class StrandsFargateStack extends Stack {
         // Add any environment variables needed by your application
         LOG_LEVEL: "INFO", // changing this value will result in new
         KNOWLEDGE_BASE_ID: knowledgeBaseId.stringValue,
-        AGENT_BUCKET: agentBucket.bucketName
+        AGENT_BUCKET: agentBucket.bucketName,
+        ...(guardrailId && guardrailVersion ? {
+          GUARDRAIL_ID: guardrailId.stringValue,
+          GUARDRAIL_VERSION: guardrailVersion.stringValue,
+        } : {}),
       },
       portMappings: [
         {
@@ -245,11 +282,11 @@ export class StrandsFargateStack extends Stack {
       targets: [service],
       healthCheck: {
         path: "/health",
-        interval: Duration.seconds(30),
+        interval: Duration.seconds(300),
         timeout: Duration.seconds(5),
         healthyHttpCodes: "200",
       },
-      deregistrationDelay: Duration.seconds(30),
+      deregistrationDelay: Duration.seconds(300),
     });
 
     // Output the load balancer DNS name
@@ -293,31 +330,27 @@ export class StrandsFargateStack extends Stack {
 
     NagSuppressions.addResourceSuppressions(taskDefinition, [
       {
-        id: 'AwsSolutions-ECS2',
-        reason: 'Environment variables used are non-sensitive and needed for container behavior.',
+        id: "AwsSolutions-ECS2",
+        reason: "Environment variables used are non-sensitive and needed for container behavior.",
       },
     ]);
 
-    NagSuppressions.addResourceSuppressionsByPath(
-      this,
-      `/${projectName}FargateStack/${projectName}-alb/Resource`,
-      [
-        {
-          id: 'AwsSolutions-ELB2',
-          reason: 'ALB access logs cannot be enabled on region agnostic stacks. Use VPC flow logs',
-        },
-      ]
-    );
+    NagSuppressions.addResourceSuppressionsByPath(this, `/${projectName}FargateStack/${projectName}-alb/Resource`, [
+      {
+        id: "AwsSolutions-ELB2",
+        reason: "ALB access logs cannot be enabled on region agnostic stacks. Use VPC flow logs",
+      },
+    ]);
 
     NagSuppressions.addResourceSuppressionsByPath(
       this,
       `/${projectName}FargateStack/${projectName}-alb/SecurityGroup/Resource`,
       [
         {
-          id: 'AwsSolutions-EC23',
-          reason: 'ALB allows inbound access to public.',
+          id: "AwsSolutions-EC23",
+          reason: "ALB allows inbound access to public.",
         },
-      ]
+      ],
     );
 
     NagSuppressions.addResourceSuppressionsByPath(
@@ -325,10 +358,10 @@ export class StrandsFargateStack extends Stack {
       `/${projectName}FargateStack/${projectName}-task-role/DefaultPolicy/Resource`,
       [
         {
-          id: 'AwsSolutions-IAM5',
-          reason: 'Allowing access to all bedrock models',
+          id: "AwsSolutions-IAM5",
+          reason: "Allowing access to all bedrock models",
         },
-      ]
+      ],
     );
   }
 }

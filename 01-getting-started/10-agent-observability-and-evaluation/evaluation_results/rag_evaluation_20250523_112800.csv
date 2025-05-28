@@ -1,0 +1,243 @@
+user_input,retrieved_contexts,response,reference,nv_context_relevance,nv_response_groundedness,factual_correctness(mode=f1)
+"Hi, where can I eat in San Francisco?","['[{\'text\': ""Retrieved 3 results with score >= 0.4:\\n\\nScore: 0.4872\\nDocument ID: Unknown\\nContent: Rice & Spice  Cuisine Type: Pan-Asian Fusion  SMALL BITES  · Pork Belly Bao Buns with hoisin and pickled daikon - $12  · Korean Fried Chicken with gochujang glaze - $14  · Green Papaya Salad with peanuts and chili lime dressing - $10  MAIN DISHES  · Miso Black Cod with ginger scallion oil - $28  · Red Curry with coconut milk, seasonal vegetables, and jasmine rice - $19  · Bibimbap with bulgogi beef and sunny-side-up egg - $17  · Singapore Chili Crab Noodles - $24  SWEETS  · Mango Sticky Rice - $8  · Matcha Tiramisu - $9  · Black Sesame Ice Cream - $7\\n\\n\\nScore: 0.4601\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n\\n\\nScore: 0.4190\\nDocument ID: Unknown\\nContent: Spice Caravan  Cuisine Type: Pan-Middle Eastern  MEZZE  · House Hummus with warm pita and za\'atar oil - $8  · Muhammara with pomegranate molasses and walnuts - $9  · Labneh with olive oil, mint, and cucumber - $7  · Falafel Plate with tahini sauce - $10  MAINS  · Lamb Tagine with apricots, almonds, and couscous - $24  · Chicken Shawarma Plate with vermicelli rice and garlic sauce - $18  · Eggplant Moussaka with cinnamon-scented tomato sauce - $16  · Grilled Branzino with chermoula and preserved lemon - $26  SWEETS  · Pistachio Baklava - $7  · Rose Water Panna Cotta - $8  · Turkish Coffee Affogato - $6\\n""}]', '[{\'text\': ""Retrieved 1 results with score >= 0.4:\\n\\nScore: 0.4449\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n""}]']","
+
+<answer>
+Hello! I found a great Pan-Asian fusion restaurant in San Francisco called Rice & Spice, located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. 
+
+They offer a delicious menu featuring:
+- Small bites like Pork Belly Bao Buns and Korean Fried Chicken
+- Main dishes including Miso Black Cod, Red Curry, and Singapore Chili Crab Noodles
+- Desserts such as Mango Sticky Rice and Matcha Tiramisu
+
+Would you like to make a reservation at Rice & Spice?
+</answer>
+","
+
+<answer>
+Hello! I found a great Pan-Asian fusion restaurant in San Francisco called Rice & Spice, located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. 
+
+They offer a delicious menu featuring:
+- Small bites like Pork Belly Bao Buns and Korean Fried Chicken
+- Main dishes including Miso Black Cod, Red Curry, and Singapore Chili Crab Noodles
+- Desserts such as Mango Sticky Rice and Matcha Tiramisu
+
+Would you like to make a reservation at Rice & Spice? This is extra text.
+</answer>
+",1.0,1.0,1.0
+"Hi, where can I eat in San Francisco?","['[{\'text\': ""Retrieved 3 results with score >= 0.4:\\n\\nScore: 0.4859\\nDocument ID: Unknown\\nContent: Rice & Spice  Cuisine Type: Pan-Asian Fusion  SMALL BITES  · Pork Belly Bao Buns with hoisin and pickled daikon - $12  · Korean Fried Chicken with gochujang glaze - $14  · Green Papaya Salad with peanuts and chili lime dressing - $10  MAIN DISHES  · Miso Black Cod with ginger scallion oil - $28  · Red Curry with coconut milk, seasonal vegetables, and jasmine rice - $19  · Bibimbap with bulgogi beef and sunny-side-up egg - $17  · Singapore Chili Crab Noodles - $24  SWEETS  · Mango Sticky Rice - $8  · Matcha Tiramisu - $9  · Black Sesame Ice Cream - $7\\n\\n\\nScore: 0.4740\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n\\n\\nScore: 0.4191\\nDocument ID: Unknown\\nContent: Spice Caravan  Cuisine Type: Pan-Middle Eastern  MEZZE  · House Hummus with warm pita and za\'atar oil - $8  · Muhammara with pomegranate molasses and walnuts - $9  · Labneh with olive oil, mint, and cucumber - $7  · Falafel Plate with tahini sauce - $10  MAINS  · Lamb Tagine with apricots, almonds, and couscous - $24  · Chicken Shawarma Plate with vermicelli rice and garlic sauce - $18  · Eggplant Moussaka with cinnamon-scented tomato sauce - $16  · Grilled Branzino with chermoula and preserved lemon - $26  SWEETS  · Pistachio Baklava - $7  · Rose Water Panna Cotta - $8  · Turkish Coffee Affogato - $6\\n""}]', '[{\'text\': ""Retrieved 1 results with score >= 0.4:\\n\\nScore: 0.4644\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n""}]']","
+
+<answer>
+I found a great Pan-Asian fusion restaurant in San Francisco called Rice & Spice, located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. 
+
+They offer a variety of delicious dishes including:
+- Small bites like Pork Belly Bao Buns and Korean Fried Chicken
+- Main dishes such as Miso Black Cod, Red Curry, and Singapore Chili Crab Noodles
+- Desserts including Mango Sticky Rice and Matcha Tiramisu
+
+Would you like me to help you make a reservation at Rice & Spice?
+</answer>
+","
+
+<answer>
+I found a great Pan-Asian fusion restaurant in San Francisco called Rice & Spice, located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. 
+
+They offer a variety of delicious dishes including:
+- Small bites like Pork Belly Bao Buns and Korean Fried Chicken
+- Main dishes such as Miso Black Cod, Red Curry, and Singapore Chili Crab Noodles
+- Desserts including Mango Sticky Rice and Matcha Tiramisu
+
+Would you like me to help you make a reservation at Rice & Spice? This is extra text.
+</answer>
+",1.0,1.0,1.0
+"Hi, where can I eat in San Francisco?","['[{\'text\': ""Retrieved 3 results with score >= 0.4:\\n\\nScore: 0.4859\\nDocument ID: Unknown\\nContent: Rice & Spice  Cuisine Type: Pan-Asian Fusion  SMALL BITES  · Pork Belly Bao Buns with hoisin and pickled daikon - $12  · Korean Fried Chicken with gochujang glaze - $14  · Green Papaya Salad with peanuts and chili lime dressing - $10  MAIN DISHES  · Miso Black Cod with ginger scallion oil - $28  · Red Curry with coconut milk, seasonal vegetables, and jasmine rice - $19  · Bibimbap with bulgogi beef and sunny-side-up egg - $17  · Singapore Chili Crab Noodles - $24  SWEETS  · Mango Sticky Rice - $8  · Matcha Tiramisu - $9  · Black Sesame Ice Cream - $7\\n\\n\\nScore: 0.4740\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n\\n\\nScore: 0.4191\\nDocument ID: Unknown\\nContent: Spice Caravan  Cuisine Type: Pan-Middle Eastern  MEZZE  · House Hummus with warm pita and za\'atar oil - $8  · Muhammara with pomegranate molasses and walnuts - $9  · Labneh with olive oil, mint, and cucumber - $7  · Falafel Plate with tahini sauce - $10  MAINS  · Lamb Tagine with apricots, almonds, and couscous - $24  · Chicken Shawarma Plate with vermicelli rice and garlic sauce - $18  · Eggplant Moussaka with cinnamon-scented tomato sauce - $16  · Grilled Branzino with chermoula and preserved lemon - $26  SWEETS  · Pistachio Baklava - $7  · Rose Water Panna Cotta - $8  · Turkish Coffee Affogato - $6\\n""}]', '[{\'text\': ""Retrieved 1 results with score >= 0.4:\\n\\nScore: 0.4644\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n""}]']","
+
+<answer>In San Francisco, I can recommend Rice & Spice, a Pan-Asian fusion restaurant located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. 
+
+They offer a diverse menu including:
+- Small bites like Pork Belly Bao Buns and Korean Fried Chicken
+- Main dishes such as Miso Black Cod, Red Curry, and Singapore Chili Crab Noodles
+- Desserts including Mango Sticky Rice and Matcha Tiramisu
+
+Would you like to make a reservation at Rice & Spice?</answer>
+","
+
+<answer>In San Francisco, I can recommend Rice & Spice, a Pan-Asian fusion restaurant located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. 
+
+They offer a diverse menu including:
+- Small bites like Pork Belly Bao Buns and Korean Fried Chicken
+- Main dishes such as Miso Black Cod, Red Curry, and Singapore Chili Crab Noodles
+- Desserts including Mango Sticky Rice and Matcha Tiramisu
+
+Would you like to make a reservation at Rice & Spice?</answer>
+ This is extra text.",1.0,1.0,1.0
+"Hi, where can I eat in San Francisco?","['[{\'text\': ""Retrieved 3 results with score >= 0.4:\\n\\nScore: 0.4859\\nDocument ID: Unknown\\nContent: Rice & Spice  Cuisine Type: Pan-Asian Fusion  SMALL BITES  · Pork Belly Bao Buns with hoisin and pickled daikon - $12  · Korean Fried Chicken with gochujang glaze - $14  · Green Papaya Salad with peanuts and chili lime dressing - $10  MAIN DISHES  · Miso Black Cod with ginger scallion oil - $28  · Red Curry with coconut milk, seasonal vegetables, and jasmine rice - $19  · Bibimbap with bulgogi beef and sunny-side-up egg - $17  · Singapore Chili Crab Noodles - $24  SWEETS  · Mango Sticky Rice - $8  · Matcha Tiramisu - $9  · Black Sesame Ice Cream - $7\\n\\n\\nScore: 0.4740\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n\\n\\nScore: 0.4191\\nDocument ID: Unknown\\nContent: Spice Caravan  Cuisine Type: Pan-Middle Eastern  MEZZE  · House Hummus with warm pita and za\'atar oil - $8  · Muhammara with pomegranate molasses and walnuts - $9  · Labneh with olive oil, mint, and cucumber - $7  · Falafel Plate with tahini sauce - $10  MAINS  · Lamb Tagine with apricots, almonds, and couscous - $24  · Chicken Shawarma Plate with vermicelli rice and garlic sauce - $18  · Eggplant Moussaka with cinnamon-scented tomato sauce - $16  · Grilled Branzino with chermoula and preserved lemon - $26  SWEETS  · Pistachio Baklava - $7  · Rose Water Panna Cotta - $8  · Turkish Coffee Affogato - $6\\n""}]', '[{\'text\': ""Retrieved 1 results with score >= 0.4:\\n\\nScore: 0.4697\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n""}]']","
+
+<answer>
+I found a great Pan-Asian fusion restaurant in San Francisco called Rice & Spice, located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. They offer a variety of delicious dishes including:
+
+Small Bites:
+- Pork Belly Bao Buns
+- Korean Fried Chicken
+- Green Papaya Salad
+
+Main Dishes:
+- Miso Black Cod
+- Red Curry
+- Bibimbap
+- Singapore Chili Crab Noodles
+
+Would you like to make a reservation at Rice & Spice?
+</answer>
+","
+
+<answer>
+I found a great Pan-Asian fusion restaurant in San Francisco called Rice & Spice, located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. They offer a variety of delicious dishes including:
+
+Small Bites:
+- Pork Belly Bao Buns
+- Korean Fried Chicken
+- Green Papaya Salad
+
+Main Dishes:
+- Miso Black Cod
+- Red Curry
+- Bibimbap
+- Singapore Chili Crab Noodles
+
+Would you like to make a reservation at Rice & Spice? This is extra text.
+</answer>
+",1.0,1.0,1.0
+"Hi, where can I eat in San Francisco?","['[{\'text\': ""Retrieved 3 results with score >= 0.4:\\n\\nScore: 0.4859\\nDocument ID: Unknown\\nContent: Rice & Spice  Cuisine Type: Pan-Asian Fusion  SMALL BITES  · Pork Belly Bao Buns with hoisin and pickled daikon - $12  · Korean Fried Chicken with gochujang glaze - $14  · Green Papaya Salad with peanuts and chili lime dressing - $10  MAIN DISHES  · Miso Black Cod with ginger scallion oil - $28  · Red Curry with coconut milk, seasonal vegetables, and jasmine rice - $19  · Bibimbap with bulgogi beef and sunny-side-up egg - $17  · Singapore Chili Crab Noodles - $24  SWEETS  · Mango Sticky Rice - $8  · Matcha Tiramisu - $9  · Black Sesame Ice Cream - $7\\n\\n\\nScore: 0.4740\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n\\n\\nScore: 0.4191\\nDocument ID: Unknown\\nContent: Spice Caravan  Cuisine Type: Pan-Middle Eastern  MEZZE  · House Hummus with warm pita and za\'atar oil - $8  · Muhammara with pomegranate molasses and walnuts - $9  · Labneh with olive oil, mint, and cucumber - $7  · Falafel Plate with tahini sauce - $10  MAINS  · Lamb Tagine with apricots, almonds, and couscous - $24  · Chicken Shawarma Plate with vermicelli rice and garlic sauce - $18  · Eggplant Moussaka with cinnamon-scented tomato sauce - $16  · Grilled Branzino with chermoula and preserved lemon - $26  SWEETS  · Pistachio Baklava - $7  · Rose Water Panna Cotta - $8  · Turkish Coffee Affogato - $6\\n""}]', '[{\'text\': ""Retrieved 1 results with score >= 0.4:\\n\\nScore: 0.4398\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n""}]']","
+
+<answer>
+In San Francisco, I can recommend Rice & Spice, a Pan-Asian Fusion restaurant located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. 
+
+They offer a variety of dishes including:
+- Small bites like Pork Belly Bao Buns and Korean Fried Chicken
+- Main dishes such as Miso Black Cod, Red Curry, and Bibimbap
+- Desserts including Mango Sticky Rice and Matcha Tiramisu
+
+Would you like to make a reservation at Rice & Spice?
+</answer>
+","
+
+<answer>
+In San Francisco, I can recommend Rice & Spice, a Pan-Asian Fusion restaurant located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. 
+
+They offer a variety of dishes including:
+- Small bites like Pork Belly Bao Buns and Korean Fried Chicken
+- Main dishes such as Miso Black Cod, Red Curry, and Bibimbap
+- Desserts including Mango Sticky Rice and Matcha Tiramisu
+
+Would you like to make a reservation at Rice & Spice? This is extra text.
+</answer>
+",1.0,1.0,1.0
+"Hi, where can I eat in San Francisco?","['[{\'text\': ""Retrieved 4 results with score >= 0.4:\\n\\nScore: 0.4899\\nDocument ID: Unknown\\nContent: Rice & Spice  Cuisine Type: Pan-Asian Fusion  SMALL BITES  · Pork Belly Bao Buns with hoisin and pickled daikon - $12  · Korean Fried Chicken with gochujang glaze - $14  · Green Papaya Salad with peanuts and chili lime dressing - $10  MAIN DISHES  · Miso Black Cod with ginger scallion oil - $28  · Red Curry with coconut milk, seasonal vegetables, and jasmine rice - $19  · Bibimbap with bulgogi beef and sunny-side-up egg - $17  · Singapore Chili Crab Noodles - $24  SWEETS  · Mango Sticky Rice - $8  · Matcha Tiramisu - $9  · Black Sesame Ice Cream - $7\\n\\n\\nScore: 0.4544\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n\\n\\nScore: 0.4202\\nDocument ID: Unknown\\nContent: Spice Caravan  Cuisine Type: Pan-Middle Eastern  MEZZE  · House Hummus with warm pita and za\'atar oil - $8  · Muhammara with pomegranate molasses and walnuts - $9  · Labneh with olive oil, mint, and cucumber - $7  · Falafel Plate with tahini sauce - $10  MAINS  · Lamb Tagine with apricots, almonds, and couscous - $24  · Chicken Shawarma Plate with vermicelli rice and garlic sauce - $18  · Eggplant Moussaka with cinnamon-scented tomato sauce - $16  · Grilled Branzino with chermoula and preserved lemon - $26  SWEETS  · Pistachio Baklava - $7  · Rose Water Panna Cotta - $8  · Turkish Coffee Affogato - $6\\n\\n\\nScore: 0.4025\\nDocument ID: Unknown\\nContent: Agave & Salt  Cuisine Type: Contemporary Mexican  PARA COMPARTIR (To Share)  · Queso Fundido with house chorizo - $11  · Tuna Tostadas with avocado and chipotle aioli - $14  · Elote with cotija, lime, and chile - $8  PLATOS FUERTES (Main Dishes)  · Mole Negro with heritage chicken and sesame - $22  · Cochinita Pibil Tacos with pickled onions - $17  · Chile Relleno with walnut cream sauce - $18  · Carne Asada with chimichurri and grilled spring onions - $26  POSTRES (Desserts)  · Tres Leches Cake - $8  · Churros with Mexican chocolate sauce - $9  · Flan de Cajeta - $7\\n""}]', '[{\'text\': ""Retrieved 1 results with score >= 0.4:\\n\\nScore: 0.4493\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n""}]']","
+
+<answer>
+In San Francisco, I can recommend Rice & Spice, a fantastic Pan-Asian Fusion restaurant located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723.
+
+They offer delicious dishes including:
+- Small bites like Pork Belly Bao Buns and Korean Fried Chicken
+- Main dishes such as Miso Black Cod, Red Curry, and Singapore Chili Crab Noodles
+- Desserts including Mango Sticky Rice and Matcha Tiramisu
+
+Would you like to make a reservation at Rice & Spice?
+</answer>
+","
+
+<answer>
+In San Francisco, I can recommend Rice & Spice, a fantastic Pan-Asian Fusion restaurant located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723.
+
+They offer delicious dishes including:
+- Small bites like Pork Belly Bao Buns and Korean Fried Chicken
+- Main dishes such as Miso Black Cod, Red Curry, and Singapore Chili Crab Noodles
+- Desserts including Mango Sticky Rice and Matcha Tiramisu
+
+Would you like to make a reservation at Rice & Spice? This is extra text.
+</answer>
+",1.0,1.0,1.0
+"Hi, where can I eat in San Francisco?","['[{\'text\': ""Retrieved 3 results with score >= 0.4:\\n\\nScore: 0.4859\\nDocument ID: Unknown\\nContent: Rice & Spice  Cuisine Type: Pan-Asian Fusion  SMALL BITES  · Pork Belly Bao Buns with hoisin and pickled daikon - $12  · Korean Fried Chicken with gochujang glaze - $14  · Green Papaya Salad with peanuts and chili lime dressing - $10  MAIN DISHES  · Miso Black Cod with ginger scallion oil - $28  · Red Curry with coconut milk, seasonal vegetables, and jasmine rice - $19  · Bibimbap with bulgogi beef and sunny-side-up egg - $17  · Singapore Chili Crab Noodles - $24  SWEETS  · Mango Sticky Rice - $8  · Matcha Tiramisu - $9  · Black Sesame Ice Cream - $7\\n\\n\\nScore: 0.4740\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n\\n\\nScore: 0.4191\\nDocument ID: Unknown\\nContent: Spice Caravan  Cuisine Type: Pan-Middle Eastern  MEZZE  · House Hummus with warm pita and za\'atar oil - $8  · Muhammara with pomegranate molasses and walnuts - $9  · Labneh with olive oil, mint, and cucumber - $7  · Falafel Plate with tahini sauce - $10  MAINS  · Lamb Tagine with apricots, almonds, and couscous - $24  · Chicken Shawarma Plate with vermicelli rice and garlic sauce - $18  · Eggplant Moussaka with cinnamon-scented tomato sauce - $16  · Grilled Branzino with chermoula and preserved lemon - $26  SWEETS  · Pistachio Baklava - $7  · Rose Water Panna Cotta - $8  · Turkish Coffee Affogato - $6\\n""}]', '[{\'text\': ""Retrieved 1 results with score >= 0.4:\\n\\nScore: 0.4270\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n""}]']","
+
+<answer>
+In San Francisco, I can recommend Rice & Spice, a fantastic Pan-Asian Fusion restaurant located at 539 Fusion Boulevard (415-555-6723). They offer a diverse menu including:
+
+Small Bites:
+- Pork Belly Bao Buns
+- Korean Fried Chicken
+- Green Papaya Salad
+
+Main Dishes:
+- Miso Black Cod
+- Red Curry
+- Bibimbap
+- Singapore Chili Crab Noodles
+
+Would you like to make a reservation at Rice & Spice?
+</answer>
+","
+
+<answer>
+In San Francisco, I can recommend Rice & Spice, a fantastic Pan-Asian Fusion restaurant located at 539 Fusion Boulevard (415-555-6723). They offer a diverse menu including:
+
+Small Bites:
+- Pork Belly Bao Buns
+- Korean Fried Chicken
+- Green Papaya Salad
+
+Main Dishes:
+- Miso Black Cod
+- Red Curry
+- Bibimbap
+- Singapore Chili Crab Noodles
+
+Would you like to make a reservation at Rice & Spice? This is extra text.
+</answer>
+",1.0,1.0,1.0
+"Hi, where can I eat in San Francisco?","['[{\'text\': ""Retrieved 3 results with score >= 0.4:\\n\\nScore: 0.4859\\nDocument ID: Unknown\\nContent: Rice & Spice  Cuisine Type: Pan-Asian Fusion  SMALL BITES  · Pork Belly Bao Buns with hoisin and pickled daikon - $12  · Korean Fried Chicken with gochujang glaze - $14  · Green Papaya Salad with peanuts and chili lime dressing - $10  MAIN DISHES  · Miso Black Cod with ginger scallion oil - $28  · Red Curry with coconut milk, seasonal vegetables, and jasmine rice - $19  · Bibimbap with bulgogi beef and sunny-side-up egg - $17  · Singapore Chili Crab Noodles - $24  SWEETS  · Mango Sticky Rice - $8  · Matcha Tiramisu - $9  · Black Sesame Ice Cream - $7\\n\\n\\nScore: 0.4740\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n\\n\\nScore: 0.4191\\nDocument ID: Unknown\\nContent: Spice Caravan  Cuisine Type: Pan-Middle Eastern  MEZZE  · House Hummus with warm pita and za\'atar oil - $8  · Muhammara with pomegranate molasses and walnuts - $9  · Labneh with olive oil, mint, and cucumber - $7  · Falafel Plate with tahini sauce - $10  MAINS  · Lamb Tagine with apricots, almonds, and couscous - $24  · Chicken Shawarma Plate with vermicelli rice and garlic sauce - $18  · Eggplant Moussaka with cinnamon-scented tomato sauce - $16  · Grilled Branzino with chermoula and preserved lemon - $26  SWEETS  · Pistachio Baklava - $7  · Rose Water Panna Cotta - $8  · Turkish Coffee Affogato - $6\\n""}]', '[{\'text\': ""Retrieved 1 results with score >= 0.4:\\n\\nScore: 0.4540\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n""}]']","
+
+<answer>
+In San Francisco, I recommend Rice & Spice, a Pan-Asian Fusion restaurant located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. 
+
+They offer a variety of delicious dishes including:
+- Small bites like Pork Belly Bao Buns ($12) and Korean Fried Chicken ($14)
+- Main dishes such as Miso Black Cod ($28) and Red Curry ($19)
+- Desserts including Mango Sticky Rice ($8) and Matcha Tiramisu ($9)
+
+Would you like to make a reservation at Rice & Spice?
+</answer>
+","
+
+<answer>
+In San Francisco, I recommend Rice & Spice, a Pan-Asian Fusion restaurant located at 539 Fusion Boulevard, San Francisco, CA 94110. You can reach them at (415) 555-6723. 
+
+They offer a variety of delicious dishes including:
+- Small bites like Pork Belly Bao Buns ($12) and Korean Fried Chicken ($14)
+- Main dishes such as Miso Black Cod ($28) and Red Curry ($19)
+- Desserts including Mango Sticky Rice ($8) and Matcha Tiramisu ($9)
+
+Would you like to make a reservation at Rice & Spice? This is extra text.
+</answer>
+",1.0,1.0,1.0
+"Hi, where can I eat in San Francisco?","['[{\'text\': ""Retrieved 3 results with score >= 0.4:\\n\\nScore: 0.4872\\nDocument ID: Unknown\\nContent: Rice & Spice  Cuisine Type: Pan-Asian Fusion  SMALL BITES  · Pork Belly Bao Buns with hoisin and pickled daikon - $12  · Korean Fried Chicken with gochujang glaze - $14  · Green Papaya Salad with peanuts and chili lime dressing - $10  MAIN DISHES  · Miso Black Cod with ginger scallion oil - $28  · Red Curry with coconut milk, seasonal vegetables, and jasmine rice - $19  · Bibimbap with bulgogi beef and sunny-side-up egg - $17  · Singapore Chili Crab Noodles - $24  SWEETS  · Mango Sticky Rice - $8  · Matcha Tiramisu - $9  · Black Sesame Ice Cream - $7\\n\\n\\nScore: 0.4601\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n\\n\\nScore: 0.4190\\nDocument ID: Unknown\\nContent: Spice Caravan  Cuisine Type: Pan-Middle Eastern  MEZZE  · House Hummus with warm pita and za\'atar oil - $8  · Muhammara with pomegranate molasses and walnuts - $9  · Labneh with olive oil, mint, and cucumber - $7  · Falafel Plate with tahini sauce - $10  MAINS  · Lamb Tagine with apricots, almonds, and couscous - $24  · Chicken Shawarma Plate with vermicelli rice and garlic sauce - $18  · Eggplant Moussaka with cinnamon-scented tomato sauce - $16  · Grilled Branzino with chermoula and preserved lemon - $26  SWEETS  · Pistachio Baklava - $7  · Rose Water Panna Cotta - $8  · Turkish Coffee Affogato - $6\\n""}]', '[{\'text\': ""Retrieved 1 results with score >= 0.4:\\n\\nScore: 0.4449\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n""}]']","
+
+<answer>
+In San Francisco, I can recommend Rice & Spice, a fantastic Pan-Asian fusion restaurant located at 539 Fusion Boulevard (phone: (415) 555-6723). They offer an exciting menu featuring dishes like Pork Belly Bao Buns, Korean Fried Chicken, Miso Black Cod, and Singapore Chili Crab Noodles. Their dessert selection includes delicious options like Mango Sticky Rice and Matcha Tiramisu. Would you like to make a reservation at Rice & Spice?
+</answer>
+","
+
+<answer>
+In San Francisco, I can recommend Rice & Spice, a fantastic Pan-Asian fusion restaurant located at 539 Fusion Boulevard (phone: (415) 555-6723). They offer an exciting menu featuring dishes like Pork Belly Bao Buns, Korean Fried Chicken, Miso Black Cod, and Singapore Chili Crab Noodles. Their dessert selection includes delicious options like Mango Sticky Rice and Matcha Tiramisu. Would you like to make a reservation at Rice & Spice? This is extra text.
+</answer>
+",1.0,1.0,1.0
+"Hi, where can I eat in San Francisco?","['[{\'text\': ""Retrieved 3 results with score >= 0.4:\\n\\nScore: 0.4859\\nDocument ID: Unknown\\nContent: Rice & Spice  Cuisine Type: Pan-Asian Fusion  SMALL BITES  · Pork Belly Bao Buns with hoisin and pickled daikon - $12  · Korean Fried Chicken with gochujang glaze - $14  · Green Papaya Salad with peanuts and chili lime dressing - $10  MAIN DISHES  · Miso Black Cod with ginger scallion oil - $28  · Red Curry with coconut milk, seasonal vegetables, and jasmine rice - $19  · Bibimbap with bulgogi beef and sunny-side-up egg - $17  · Singapore Chili Crab Noodles - $24  SWEETS  · Mango Sticky Rice - $8  · Matcha Tiramisu - $9  · Black Sesame Ice Cream - $7\\n\\n\\nScore: 0.4740\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n\\n\\nScore: 0.4191\\nDocument ID: Unknown\\nContent: Spice Caravan  Cuisine Type: Pan-Middle Eastern  MEZZE  · House Hummus with warm pita and za\'atar oil - $8  · Muhammara with pomegranate molasses and walnuts - $9  · Labneh with olive oil, mint, and cucumber - $7  · Falafel Plate with tahini sauce - $10  MAINS  · Lamb Tagine with apricots, almonds, and couscous - $24  · Chicken Shawarma Plate with vermicelli rice and garlic sauce - $18  · Eggplant Moussaka with cinnamon-scented tomato sauce - $16  · Grilled Branzino with chermoula and preserved lemon - $26  SWEETS  · Pistachio Baklava - $7  · Rose Water Panna Cotta - $8  · Turkish Coffee Affogato - $6\\n""}]', '[{\'text\': ""Retrieved 1 results with score >= 0.4:\\n\\nScore: 0.4449\\nDocument ID: Unknown\\nContent: Restaurant Directory    1. **The Coastal Bloom**       457 Harbor View Drive       Seattle, WA 98121       (206) 555-7890    2. **Spice Caravan**       328 Saffron Street       Chicago, IL 60607       (312) 555-3421    3. **Botanic Table**       1845 Garden Avenue       Portland, OR 97205       (503) 555-9876    4. **Nonna\'s Hearth**       214 Mulberry Lane       Boston, MA 02116       (617) 555-2390    5. **The Smoking Ember**       782 Hickory Road       Austin, TX 78704       (512) 555-8217    6. **Rice & Spice**       539 Fusion Boulevard       San Francisco, CA 94110       (415) 555-6723    7. **Bistro Parisienne**       125 Rue Montmartre       New Orleans, LA 70116       (504) 555-1432    8. **Agave & Salt**       387 Cactus Drive       Santa Fe, NM 87501       (505) 555-9043    9. **Commonwealth & Rye**       290 Barley Street       Brooklyn, NY 11217       (718) 555-4567    10. **Ocean Harvest**        723 Coastal Highway        Monterey, CA 93940        (831) 555-8901    11. **Ember & Vine**        568 Olive Grove Lane        Napa, CA 94558        (707) 555-3214\\n""}]']","
+
+<answer>
+In San Francisco, I can recommend Rice & Spice, a fantastic Pan-Asian fusion restaurant located at 539 Fusion Boulevard (phone: 415-555-6723). They offer a diverse menu including delicious small bites like Pork Belly Bao Buns and Korean Fried Chicken, main dishes such as Miso Black Cod and Red Curry, and delightful desserts including Mango Sticky Rice and Matcha Tiramisu. Would you like to make a reservation?
+</answer>
+","
+
+<answer>
+In San Francisco, I can recommend Rice & Spice, a fantastic Pan-Asian fusion restaurant located at 539 Fusion Boulevard (phone: 415-555-6723). They offer a diverse menu including delicious small bites like Pork Belly Bao Buns and Korean Fried Chicken, main dishes such as Miso Black Cod and Red Curry, and delightful desserts including Mango Sticky Rice and Matcha Tiramisu. Would you like to make a reservation? This is extra text.
+</answer>
+",1.0,1.0,1.0

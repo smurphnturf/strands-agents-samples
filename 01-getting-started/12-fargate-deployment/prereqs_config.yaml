@@ -1,0 +1,10 @@
+guardrail_arn: arn:aws:bedrock:ap-southeast-2:293952095306:guardrail/zgqo5yxxl6we
+guardrail_id: zgqo5yxxl6we
+guardrail_name: restaurant-assistant-guardrail
+guardrail_version: DRAFT
+kb_files_path: kb_files
+knowledge_base_description: bedrock-allow
+knowledge_base_name: restaurant-assistant
+pk_item: booking_id
+sk_item: restaurant_name
+table_name: restaurant-assistant-bookings

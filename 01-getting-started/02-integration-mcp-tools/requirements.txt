@@ -2,3 +2,5 @@ uv
 strands-agents
 strands-agents-tools
 mcp
+pip-system-certs
+certifi

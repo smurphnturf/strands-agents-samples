@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  restaurant-assistant:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    command: ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./docker/app:/app:rw
+    environment:
+      - PORT=8000
+      - AGENT_BUCKET=${AGENT_BUCKET}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION:-ap-southeast-2}
+      - KNOWLEDGE_BASE_ID=${KNOWLEDGE_BASE_ID:-RTPQAOWJTZ}
+      - GUARDRAIL_ID=${GUARDRAIL_ID:-zgqo5yxxl6we}
+      - GUARDRAIL_VERSION=${GUARDRAIL_VERSION:-DRAFT}
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    networks:
+      - restaurant-net
+
+networks:
+  restaurant-net:
+    driver: bridge
